@@ -9,6 +9,10 @@ export function Home({ value }) {
     const [display, setDisplay] = useState([])
 
     useEffect(()=> {
+
+        //API call was changed to only 1 call
+        //The reason for it is that to not hit API call limit should there be any
+        //this could however change, depending on extra implementation
         const fetchData = async () => {
             try {
               let dataItems = await axios.get("/api/dataItems")

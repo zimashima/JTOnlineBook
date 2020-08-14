@@ -4,6 +4,26 @@ Thank you so much for your interest in joining JusticeText. Please read the inst
 
 To begin the assessment, you will need to download the associated files in this repo and ensure you have node installed on your machine. This repo contains code for a starter application that you will be improving as part of this assessment. The server file is written in Node.js and the frontend utilizies React.js.
 
+## Changes made
+
+* Reduce API call from 90 or more to 1 call
+```
+This is so that to limit tha chance of making too many API calls
+```
+* Styling
+```
+ - Added color
+ - Fixed Layout
+ - Add paragraph indication for each paragraph
+```
+* 
+
+
+
+
+
+# Installation Guide
+
 ## Install Node
 
 Follow the instructions on the [Node.js official site](https://nodejs.org/en/download/) to download Node.js and NPM. We use yarn as our package manager and if you wish to do the same, you can follow the instructions on the [Yarn official site](https://classic.yarnpkg.com/en/docs/install) to install it.

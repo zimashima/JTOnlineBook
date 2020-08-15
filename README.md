@@ -6,22 +6,38 @@ To begin the assessment, you will need to download the associated files in this 
 
 ## Changes made
 
-* Reduce API call from 90 or more to 1 call
+* Create an endpoint with Reduce API call from 90 or more to 1 call
 ```
-This is so that to limit tha chance of making too many API calls
+ - This is so that to limit tha chance of making too many API calls
+ - This is also to prevent hitting the rate limit on API call
 ```
 * Styling
 ```
  - Added color
  - Fixed Layout
+ - Refactor UI components so they'll be easily reusable
  - Add paragraph indication for each paragraph
 ```
-* 
 
 
+## Answer
+Short answer response (300 words): At the moment, user edits do not persist. If
+you make a change, then execute a search like "ddd" such that all words (including
+whatever edit you made) disappear, then clear the search box, you'll find your edits
+have disappeared. Can you briefly explain why this is the case and how this might be
+addressed? This does not require you to write any code.
 
+```
+This is because the changes only appear in the input but because there are a couple of layers of things to be considered:
 
+- Component level state: 
+    the changes are only made in the input form, but there's no function or mechanism to change the state of the application, thus, the changes are only the value in the input. It does not change the state, and and it could not be found by the search function (the search function was created to look up the elements set in the component level state). Thus, even if you try to find the changes right after you edit, the application would not be able to find it.
 
+- Database:
+    The more effective way would be that  the changes are updated in the database
+    After the changes is done, they are persisted in the database, therefore they can be called and used whenever the user wants
+
+```
 # Installation Guide
 
 ## Install Node

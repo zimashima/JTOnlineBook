@@ -7,7 +7,7 @@ export function TextItem({ data, value }) {
         if ((Math.floor(data.info.start / 2000) % value) === 0) {
             return "highlight"
         }
-        return ""
+        return "nothighlight"
     }
 
   return (

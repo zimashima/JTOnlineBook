@@ -9,6 +9,10 @@ $theme-colors: (
   "primary": $jtpurple,
 );
 
+.nothighlight{
+  display: none;
+}
+
 h1, h2 {
     font-family: $montserrat;
     font-size: 36px;

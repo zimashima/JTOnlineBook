@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&family=Roboto:wght@400;700&display=swap");
+.nothighlight {
+  display: none; }
+
 h1, h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
